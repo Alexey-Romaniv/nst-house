@@ -1,0 +1,116 @@
+.hero {
+  text-align: center;
+  background: linear-gradient(179.35deg, #1C211B 6.96%, rgba(256, 256, 256, 0) 100%), url("../img/hero/bg-hero.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  //background-position: ;
+}
+
+.hero__image {
+  margin-inline: auto;
+}
+
+.hero__title {
+  margin: 40px 0 20px;
+
+  font-family: 'Roboto Condensed', sans-serif;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 108%;
+  /* or 24px */
+
+  color: #FFFFFF;
+}
+
+.hero_subtitle {
+  font-family: 'Roboto Condensed', sans-serif;
+
+  font-size: 20px;
+  line-height: 108%;
+  /* or 24px */
+
+  color: #FFFFFF;
+}
+
+.hero__list {
+  margin-top: 15px;
+
+  display: flex;
+  justify-content: space-between;
+
+  //gap: 25px;
+}
+
+.hero__text {
+  margin-top: 8px;
+
+  font-family: 'Roboto Condensed', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #FFFFFF;
+}
+
+.hero__item {
+
+  & img{
+    margin-inline: auto;
+  }
+  &_lower {
+    padding-top: 30px;
+  }
+}
+.hero__logo-text{
+  display: none;
+}
+
+@include mq(desktop) {
+  .hero{
+    text-align: left;
+
+    padding: 160px 0;
+
+    background:url(/img/hero/bg-hero-desktop2.png), url(/img/hero/bg-hero-desktop.png) ;
+    background-size: 1280px 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .hero__container{
+    background: url("../img/hero/line.svg");
+    background-repeat: no-repeat;
+    background-size: 100% 180px;
+    background-position: bottom;
+  }
+  .hero__logo-text{
+    display: block;
+    font-size: 72px;
+    line-height: calc(83/72);
+    background-color: $white-color;
+    max-width: 1000px;
+    margin-left: -50px;
+    padding-left: 50px;
+    white-space: nowrap;
+  }
+
+  .hero__image{
+    display: none;
+  }
+
+  .hero__title{
+    font-size: 34px;
+    line-height: calc(40/34);
+  }
+
+  .hero_subtitle{
+    font-size: 30px;
+    line-height: calc(34/30);
+    margin-bottom: 80px;
+  }
+}

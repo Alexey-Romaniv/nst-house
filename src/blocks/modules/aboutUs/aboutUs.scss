@@ -1,0 +1,17 @@
+.aboutUs{
+  background: linear-gradient(0deg, rgba(123, 184, 62, 0.67), rgba(123, 184, 62, 0.67)), url("../img/aboutUs/aboutUs-bg.png");
+  background-size: cover;
+}
+.aboutUs__title{
+  color: $white-color;
+}
+.aboutUs__text{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+
+  text-align: center;
+
+  color: $white-color;
+}

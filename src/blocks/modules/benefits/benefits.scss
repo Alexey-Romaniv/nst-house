@@ -1,0 +1,33 @@
+.benefits{
+
+  @include mq(desktop){
+    padding-top: 50px;
+  }
+}
+
+.benefits__container{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  text-align: center;
+
+}
+
+.benefits__title{
+  margin-bottom: 0;
+
+  @include mq(desktop){
+    margin-bottom: 0;
+  }
+}
+
+.benefits__text{
+  color: $second-text;
+
+  @include mq(desktop){
+    text-align: left;
+    font-size: 18px;
+    line-height: calc(23/18);
+  }
+}

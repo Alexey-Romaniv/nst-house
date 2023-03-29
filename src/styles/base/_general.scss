@@ -1,4 +1,58 @@
-h1, h2, h3, h4, h5, h6, ul {
+*, *:before, *:after{
+    box-sizing: border-box;
+}
+
+main {
+    overflow: hidden;
+    position: relative;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: calc(15/12);
+    color: #272727;
+    background-color: #ffffff;
+    letter-spacing: 0.03em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul,
+ol {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
     margin: 0;
     padding: 0;
+    cursor: pointer;
+    outline: none;
+    border: none;
+
 }

@@ -1,0 +1,41 @@
+.contacts{
+  background: linear-gradient(0deg, rgba(123, 184, 62, 0.67), rgba(123, 184, 62, 0.67)), url('../img/contacts/contactsBg.png');
+  background-size: cover;
+
+  text-align: center;
+
+  & img{
+    margin-inline: auto;
+  }
+}
+
+.contacts__title{
+  color: $white-color;
+}
+
+.contacts__list{
+  display: flex;
+
+  flex-direction: column;
+  gap: 5px;
+
+  margin-bottom: 20px;
+}
+
+.contacts__link{
+  color: $white-color;
+
+  transition: color $time-animation $cubic-bezier;
+
+  &:hover, &:focus{
+    color: $accent-color;
+  }
+}
+
+.contacts__button{
+  margin: 20px auto 0;
+
+  &:before{
+    right: 5px;
+  }
+}
