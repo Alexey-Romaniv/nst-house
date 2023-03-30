@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>gulp-scss-starter</title>
+        <title>NST-HOUSE</title>
         <meta name="theme-color" content="#fff">
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
         <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -23,11 +23,35 @@
         <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
         <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
         <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
+        <link
+                rel="stylesheet"
+                href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Condensed:wght@300;400&display=swap"
+              rel="stylesheet">
+
         <link rel="stylesheet" href="styles/main.css">
     </head>
     <body>
         @@include("../blocks/modules/header/header.html")
+        <main>
+            @@include("../blocks/modules/hero/hero.html")
+            @@include("../blocks/modules/benefits/benefits.html")
+            @@include("../blocks/modules/gallery/gallery.html")
+            @@include("../blocks/modules/corporation/corporation.html")
+            @@include("../blocks/modules/aboutUs/aboutUs.html")
+            @@include("../blocks/modules/reviews/reviews.html")
+            @@include("../blocks/modules/ourTeam/ourTeam.html")
+            @@include("../blocks/modules/contacts/contacts.html")
+            @@include("../blocks/modules/ourClients/ourClients.html")
+
+        </main>
         @@include("../blocks/modules/footer/footer.html")
+        @@include("../blocks/modules/modal/modal.html")
+        <script type="module" src="https://kit.fontawesome.com/0377b0c2de.js" crossorigin="anonymous"></script>
+
         <script src="js/vendor.js"></script>
         <script src="js/main.js"></script>
     </body>
