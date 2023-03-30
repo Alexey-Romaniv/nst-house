@@ -41,6 +41,7 @@
   text-align: center;
   text-transform: uppercase;
 
+
   @include mq(desktop){
     font-size: 32px;
     line-height: calc(38/32);
