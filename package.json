@@ -8,6 +8,8 @@
         "url": "https://github.com/Alexey-Romaniv/nst-house.git"
     },
     "scripts": {
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -b main -d build",
         "dev": "gulp",
         "build": "gulp prod --production",
         "build:views": "gulp views --production",

@@ -12,7 +12,6 @@
   }
 
 
-
   @include mq(desktop) {
     max-width: 1280px;
     padding-left: 50px;
@@ -20,31 +19,31 @@
   }
 }
 
-.section{
+.section {
   padding: 60px 0;
 
-  @include mq(desktop){
-    padding:90px 0 ;
+  @include mq(desktop) {
+    padding: 90px 0;
   }
 }
 
-.title{
+.title {
   margin-bottom: 21px;
 
   font-family: $title-font;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: calc(19/16);
+  line-height: calc(19 / 16);
   /* identical to box height */
 
   text-align: center;
   text-transform: uppercase;
 
 
-  @include mq(desktop){
+  @include mq(desktop) {
     font-size: 32px;
-    line-height: calc(38/32);
+    line-height: calc(38 / 32);
     margin-bottom: 35px;
   }
 }
@@ -62,7 +61,7 @@
   overflow: hidden;
 }
 
-.button{
+.button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -74,7 +73,7 @@
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
-  line-height: calc(21/18);
+  line-height: calc(21 / 18);
   /* identical to box height */
   border-radius: 10px;
 
@@ -83,7 +82,6 @@
   color: #FFFFFF;
   background: linear-gradient(180deg, #E7A24F 0%, #E7734F 100%);
   box-shadow: 0 4px 4px rgba(124, 65, 22, 0.15);
-
 
 
   //display: inline-block;
@@ -124,21 +122,25 @@
 }
 
 
-.logo-text{
+.logo-text {
   font-family: Arial, sans-serif;
 
 
   text-transform: uppercase;
-  &__first{
+
+  &__first {
     color: $accent-color;
   }
-  &__second{
+
+  &__second {
     color: #565F64;
   }
-  &__third{
+
+  &__third {
     color: #43A2D9;
   }
-  &__fourth{
+
+  &__fourth {
     color: #565F64;
   }
 }
