@@ -77,7 +77,7 @@
 
     padding: 160px 0;
 
-    background:url(/img/hero/bg-hero-desktop2.png), url(/img/hero/bg-hero-desktop.png) ;
+    background:url(../img/hero/bg-hero-desktop2.png), url(../img/hero/bg-hero-desktop.png) ;
     background-size: 1280px 100%;
     background-repeat: no-repeat;
     background-position: center;
@@ -86,7 +86,35 @@
     background: url("../img/hero/line.svg");
     background-repeat: no-repeat;
     background-size: 100% 180px;
-    background-position: bottom;
+    background-position: bottom 0px center;
+  }
+  .hero__list{
+    position: relative;
+    height: 180px;
+    margin-bottom: 80px;
+  }
+  .hero__item{
+    position: absolute;
+    & img {
+      width: 106px;
+      height: 106px;
+    }
+    &:nth-child(1){
+      top: 55%;
+      left: 135px;
+    }
+    &:nth-child(2){
+      top: 10%;
+      left: 410px;
+    }
+    &:nth-child(3){
+      top: -55px;
+      right: 395px;
+    }
+    &:nth-child(4){
+      top: 10px;
+      right: 125px;
+    }
   }
   .hero__logo-text{
     display: block;
@@ -106,6 +134,8 @@
   .hero__title{
     font-size: 34px;
     line-height: calc(40/34);
+
+
   }
 
   .hero_subtitle{
@@ -114,3 +144,4 @@
     margin-bottom: 80px;
   }
 }
+

@@ -15,3 +15,9 @@
 
   color: $white-color;
 }
+
+@include mq(desktop){
+  .aboutUs{
+    background: $secondary-bg-color;
+  }
+}
