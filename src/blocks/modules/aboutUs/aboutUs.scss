@@ -1,23 +1,74 @@
-.aboutUs{
+.aboutUs {
   background: linear-gradient(0deg, rgba(123, 184, 62, 0.67), rgba(123, 184, 62, 0.67)), url("../img/aboutUs/aboutUs-bg.png");
   background-size: cover;
 }
-.aboutUs__title{
+
+.aboutUs__title {
   color: $white-color;
 }
-.aboutUs__text{
+
+.aboutUs__text {
   display: flex;
   flex-direction: column;
   gap: 15px;
 
 
-  text-align: center;
+  text-align: left;
+
 
   color: $white-color;
 }
 
-@include mq(desktop){
-  .aboutUs{
+.aboutUs__img-bg {
+  display: none;
+}
+
+.aboutUs__link {
+  font-size: 12px;
+  line-height: calc(15 / 12);
+  text-decoration-line: underline;
+
+  color: #565F64;
+  max-width: 110px;
+
+  transition: color $time-animation $cubic-bezier;
+
+  &:hover,&:focus{
+    color: $accent-color;
+  }
+}
+
+@include mq(desktop) {
+  .aboutUs {
     background: $secondary-bg-color;
+  }
+  .aboutUs__container {
+    display: flex;
+    gap: 30px;
+  }
+  .aboutUs__text {
+    gap: 20px;
+
+    font-size: 18px;
+    line-height: calc(23/18);
+  }
+  .aboutUs__img-bg {
+    background-color: $white-color;
+
+
+
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 470px;
+    height: auto;
+  }
+  .aboutUs__link{
+    margin-top: 10px;
+
+    font-size: 20px;
+    line-height: calc(25/20);
+    max-width: 180px;
   }
 }
