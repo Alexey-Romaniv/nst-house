@@ -316,41 +316,7 @@
     <img  src="./img/ourTeam/team.jpg"/>
   </div>
 </section>
-            <section class="section contacts">
-  <div class="container">
-    <h2 class="title contacts__title">контакты</h2>
-
-    <div class="contacts__flex-container">
-      <div>
-        <img class="contacts__logo" src="./img/logo/logo-section1.png" alt="logo">
-        <ul class="contacts__list">
-          <li class="contacts__item">
-            <a target="_blank" href="tel:+38 (050) 242-02-11" class="contacts__link">+38 (050) 242-02-11</a>
-          </li>
-          <li class="contacts__item">
-            <a target="_blank" href="mailto:ukrainekava@gmail.com" class="contacts__link">ukrainekava@gmail.com</a>
-          </li>
-          <li class="contacts__item">
-            <a target="_blank"
-               href="https://www.google.com/maps/place/nestoinameste+HOUSE/@50.498369,30.5479719,15z/data=!4m6!3m5!1s0x40d4d11a8a3c94bb:0x2df8b78aec62ed2c!8m2!3d50.498369!4d30.5479719!16s%2Fg%2F11hz6tdfdp"
-               class="contacts__link">Киев, X-Park, 02139</a>
-          </li>
-        </ul>
-      </div>
-      <a target="_blank"
-         href="https://www.google.com/maps/place/nestoinameste+HOUSE/@50.498369,30.5479719,15z/data=!4m6!3m5!1s0x40d4d11a8a3c94bb:0x2df8b78aec62ed2c!8m2!3d50.498369!4d30.5479719!16s%2Fg%2F11hz6tdfdp">
-        <picture class="contacts__map">
-          <source media="(max-width: 1279px)" srcset="./img/contacts/map.jpg" sizes="">
-          <source media="(min-width: 1280px)" srcset="./img/contacts/map-des.jpg" sizes="">
-          <img src="./img/contacts/map-des.jpg" alt="map"/>
-        </picture>
-      </a>
-
-      <button class="button contacts__button" data-modal-open>Задать вопрос</button>
-    </div>
-  </div>
-</section>
-            <section class="section">
+          <section class="section">
   <div class="container">
     <h2 class="title">наши клиенты</h2>
     <ul class="clients__list">
@@ -427,6 +393,40 @@
     </ul>
   </div>
 </section>
+          <section class="section contacts">
+  <div class="container">
+    <h2 class="title contacts__title">контакты</h2>
+
+    <div class="contacts__flex-container">
+      <div>
+        <img class="contacts__logo" src="./img/logo/logo-section1.png" alt="logo">
+        <ul class="contacts__list">
+          <li class="contacts__item">
+            <a target="_blank" href="tel:+38 (050) 242-02-11" class="contacts__link">+38 (050) 242-02-11</a>
+          </li>
+          <li class="contacts__item">
+            <a target="_blank" href="mailto:ukrainekava@gmail.com" class="contacts__link">ukrainekava@gmail.com</a>
+          </li>
+          <li class="contacts__item">
+            <a target="_blank"
+               href="https://www.google.com/maps/place/nestoinameste+HOUSE/@50.498369,30.5479719,15z/data=!4m6!3m5!1s0x40d4d11a8a3c94bb:0x2df8b78aec62ed2c!8m2!3d50.498369!4d30.5479719!16s%2Fg%2F11hz6tdfdp"
+               class="contacts__link">Киев, X-Park, 02139</a>
+          </li>
+        </ul>
+      </div>
+      <a target="_blank"
+         href="https://www.google.com/maps/place/nestoinameste+HOUSE/@50.498369,30.5479719,15z/data=!4m6!3m5!1s0x40d4d11a8a3c94bb:0x2df8b78aec62ed2c!8m2!3d50.498369!4d30.5479719!16s%2Fg%2F11hz6tdfdp">
+        <picture class="contacts__map">
+          <source media="(max-width: 1279px)" srcset="./img/contacts/map.jpg" sizes="">
+          <source media="(min-width: 1280px)" srcset="./img/contacts/map-des.jpg" sizes="">
+          <img src="./img/contacts/map-des.jpg" alt="map"/>
+        </picture>
+      </a>
+
+      <button class="button contacts__button" data-modal-open>Задать вопрос</button>
+    </div>
+  </div>
+</section>
 
         </main>
         <footer class="footer">
@@ -486,12 +486,13 @@
         </button>
 
         <p class="modal__caption">Оставьте свои данные, мы вам перезвоним</p>
-        <form action="" class="form">
+        <form   action="https://formspree.io/f/xzbqjknl"
+                method="POST" class="form">
             <div class="register">
                 <label class="form__label"
                 >Имя
                     <span class="input-container">
-                <input class="form__input" type="text" name="name" required/><svg
+                <input class="form__input" type="text" name="name" id="name" required/><svg
                             class="form__icon"
                     >
                   <use href="./img/sprites/sprite.svg#icon-person"></use></svg></span
@@ -499,7 +500,7 @@
                 <label class="form__label"
                 >Телефон
                     <span class="input-container">
-                <input class="form__input" type="tel" name="telephone-number" required/><svg
+                <input class="form__input" type="tel" name="telephone-number" id="number" required/><svg
                             class="form__icon"
                     >
                   <use href="./img/sprites/sprite.svg#icon-phone-modal"></use>
@@ -509,7 +510,7 @@
                 <label class="form__label"
                 >Почта
                     <span class="input-container">
-                <input class="form__input" type="email" name="email" required/><svg
+                <input class="form__input" type="email" name="email" id="email" required/><svg
                             class="form__icon"
                     >
                   <use href="./img/sprites/sprite.svg#icon-email"></use></svg></span
@@ -518,6 +519,7 @@
                 >Комментарий<textarea
                         class="form__comment"
                         name="comment"
+                        id="comment"
                         placeholder="Введите текст"
                 ></textarea>
                 </label>
@@ -526,7 +528,7 @@
         </form>
     </div>
 </div>
-        <script type="module" src="https://kit.fontawesome.com/0377b0c2de.js" crossorigin="anonymous"></script>
+<script type="module" src="https://kit.fontawesome.com/0377b0c2de.js" crossorigin="anonymous"></script>
 
         <script src="js/vendor.min.js"></script>
         <script src="js/main.min.js"></script>
