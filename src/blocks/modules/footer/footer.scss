@@ -1,15 +1,20 @@
-.footer{
+.footer {
   background: #D4E8BF;
   padding: 45px 0;
 }
-.footer__container{
+
+.footer__container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 30px;
 }
 
-.footer__subtitle{
+.footer__logo{
+  height: 88px;
+}
+
+.footer__subtitle {
   margin-bottom: 10px;
 
 
@@ -18,12 +23,12 @@
   font-family: $title-font;
   font-weight: 400;
   font-size: 14px;
-  line-height: calc(16/14);
+  line-height: calc(16 / 14);
 
-  &:after{
+  &:after {
     content: '';
     position: absolute;
-    bottom:-2;
+    bottom: -2px;
     left: 0;
     width: 100px;
     height: 2px;
@@ -32,46 +37,49 @@
   }
 }
 
-.footer-info{
+.footer-info {
   display: flex;
   justify-content: center;
   gap: 5px;
 }
 
-.footer-contacts{
-  margin-inline: auto ;
+.footer-contacts {
+  margin-inline: auto;
 }
-.footer-contacts__list{
+
+.footer-contacts__list {
   display: flex;
   flex-direction: column;
   gap: 5px;
 }
-.footer-contacts__item{
+
+.footer-contacts__item {
   font-family: $title-font;
   font-weight: 300;
 
 }
 
-.footer-link{
+.footer-link {
   margin-inline: auto;
 }
-.footer-link__list{
+
+.footer-link__list {
   display: flex;
   justify-content: center;
   gap: 18px;
 }
 
-.footer-link__link svg{
+.footer-link__link svg {
   transform: scale(1);
   transition: transform $time-animation $cubic-bezier;
 
-  &:hover , &:focus {
+  &:hover, &:focus {
     transform: scale(1.1);
   }
 }
 
-.copyright{
-  margin-inline:auto;
+.copyright {
+  margin-inline: auto;
   max-width: 170px;
 
   text-align: center;
@@ -80,4 +88,48 @@
   font-weight: 300;
 
   color: #444444;
+}
+
+@include mq(desktop) {
+  .footer {
+    padding-top: 25px;
+  }
+  .footer__container {
+    gap: 10px;
+  }
+  .footer__flex-container {
+    display: flex;
+    gap: 50px;
+  }
+
+  .footer__logo{
+    height: 104px;
+  }
+
+  .footer__subtitle{
+    font-size: 18px;
+    line-height: calc(21/18);
+
+    &:after{
+      width: 120px;
+    }
+  }
+.footer-info{
+  gap: 20px;
+}
+  .footer-contacts__item{
+    font-size: 14px;
+    line-height: calc(16/14);
+  }
+
+  .copyright {
+    text-align: right;
+    margin-inline: 0;
+    margin-left: auto;
+
+    max-width: 206px;
+
+    font-size: 14px;
+    line-height: calc(16 / 14);
+  }
 }

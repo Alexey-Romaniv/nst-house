@@ -24,7 +24,7 @@
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
 
-  padding: 10px 15px;
+  padding: 40px;
 
   max-width: 500px;
   width: 100%;
@@ -37,7 +37,7 @@
 
   transition: transform $time-animation $cubic-bezier;
 
-  @include mq(mob-only){
+  @include mq(mob){
     max-width: 300px;
   }
 
@@ -76,7 +76,6 @@
 }
 
 .modal__caption {
-  max-width: 200px;
   margin: 0 auto;
   margin-bottom: 12px;
 
@@ -124,10 +123,9 @@
   display: block;
   padding: 0 40px;
   width: 100%;
-  max-width: 218px;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
-  background-color: $modal-bg-color;
+  background-color: $white-color;
 
   border-radius: 4px;
   outline: none;
@@ -153,15 +151,14 @@
   padding: 12px 20px;
 
   width: 100%;
-  max-width: 260px;
-  height: 100%;
-  max-height: 120px;
+
+  height: 150px;
 
   outline: none;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 
-  background-color: $modal-bg-color;
+  background-color: $white-color;
 
   transition: border-color $time-animation $cubic-bezier;
   &:focus {
@@ -181,12 +178,16 @@
   margin: 10px auto 0;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .modal {
     max-width: 528px;
     min-height: 581px;
   }
   .modal__caption {
     line-height: 1.15;
+  }
+
+  .form__comment{
+    height: 200px;
   }
 }
