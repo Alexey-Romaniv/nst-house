@@ -11,9 +11,17 @@
 .reviews__slide{
   display: flex;
   flex-direction: column;
+    & a{
+        display: block;
+        margin-bottom: 15px;
+
+
+    }
   & img{
-    margin-bottom: 15px;
-    width: auto;
+      max-width: 150px;
+      height: 150px;
+      object-fit: contain;
+      border-radius: 50%;
   }
 }
 .reviews__subtitle{
@@ -60,15 +68,11 @@
    .reviews__slide{
     display: flex;
      flex-direction: row;
-     gap: 30px;
+
+     gap: 8px;
 
      padding: 0 50px;
 
-     & img {
-       margin-bottom: 0;
-       width: 268px;
-       height: 268px;
-     }
   }
 
   .reviews__info{
@@ -85,7 +89,7 @@
     line-height: calc(25/20);
   }
   .reviews__text{
-    margin-bottom: 100px;
+    margin-bottom: 0;
 
     font-size: 18px;
     line-height: calc(23/18);
