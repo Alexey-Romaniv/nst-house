@@ -25,8 +25,10 @@
         <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
         <link
                 rel="stylesheet"
-                href="https://cdn.min.jsdelivr.net/npm/swiper@9/swiper-bundle.min.min.css"
+                href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
         />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Condensed:wght@300;400&display=swap"
@@ -35,7 +37,7 @@
         <link rel="stylesheet" href="styles/main.min.css">
     </head>
     <body>
-        
+
 
 <header class="header">
     <div class="container header__container">
@@ -53,11 +55,11 @@
 
 
             <ul class="nav__list">
-                <li class="nav__item"><a href="" class="nav__link">Аренда</a></li>
+                <li class="nav__item"><a href="" class="nav__link">Оренда</a></li>
                 <li class="nav__item"><a href="" class="nav__link">Меню</a></li>
-                <li class="nav__item"><a href="" class="nav__link">Галерея</a></li>
-                <li class="nav__item"><a href="" class="nav__link">О нас</a></li>
-                <li class="nav__item"><a href="" class="nav__link">Контакты</a></li>
+                <li class="nav__item"><a href="#gallery" class="nav__link">Галерея</a></li>
+                <li class="nav__item"><a href="#about" class="nav__link">Про нас</a></li>
+                <li class="nav__item"><a href="#contacts" class="nav__link">Контакти</a></li>
             </ul>
         </nav>
         <div class="header__contacts">
@@ -67,7 +69,7 @@
                 </svg>
                 +38 (050) 242-02-11
             </a>
-            <button type="button" class="button header__button" data-modal-open>Заказать звонок</button>
+            <button type="button" class="button header__button" data-modal-open>Замовити дзвінок</button>
         </div>
         <ul class="header-mob__list">
             <li class="header-mob__item">
@@ -92,55 +94,66 @@
         <h2 class="logo-text logo-text-mob"><span class="logo-text__first">#nestoi</span><span class="logo-text__second">na</span><span class="logo-text__third">meste</span> <span class="logo-text__fourth">house</span></h2>
         <nav class="nav">
             <ul class="nav__list">
-                <li class="nav__item"><a href="" class="nav__link">Аренда</a></li>
-                <li class="nav__item"><a href="" class="nav__link">Меню</a></li>
-                <li class="nav__item"><a href="" class="nav__link">Галерея</a></li>
-                <li class="nav__item"><a href="" class="nav__link">О нас</a></li>
-                <li class="nav__item"><a href="" class="nav__link">Контакты</a></li>
+                <li class="mobile-menu__item"><a href="" class="mobile-menu__link">Оренда</a></li>
+                <li class="mobile-menu__item"><a href="" class="mobile-menu__link">Меню</a></li>
+                <li class="mobile-menu__item"><a href="#gallery" class="mobile-menu__link">Галерея</a></li>
+                <li class="mobile-menu__item"><a href="#about" class="mobile-menu__link">Про нас</a></li>
+                <li class="mobile-menu__item"><a href="#contacts" class="mobile-menu__link">Контакти</a></li>
             </ul>
             <ul class="contacts">
                 <li class="contacts__item"></li>
                 <li class="contacts__item"></li>
             </ul>
         </nav>
+        <div class="header__contacts--mob">
+            <a href="" class="header__number">
+                <svg width="25" height="24">
+                    <use href="./img/sprites/sprite-header.svg#telegram-des"></use>
+                </svg>
+                +38 (050) 242-02-11
+            </a>
+            <button type="button" class="button header__button" data-modal-open>Замовити дзвінок</button>
+        </div>
     </div>
 </header>
 
         <main>
             <section class="section hero">
+    <h1 class="logo-text hero__logo-text"><span class="logo-text__first">#nestoi</span><span class="logo-text__second">na</span><span class="logo-text__third">meste</span> <span class="logo-text__fourth">house</span></h1>
+
     <div class="container hero__container">
         <img class="hero__image" src="./img/hero/logo-hero.png" alt="logo"/>
-        <h1 class="logo-text hero__logo-text"><span class="logo-text__first">#nestoi</span><span class="logo-text__second">na</span><span class="logo-text__third">meste</span> <span class="logo-text__fourth">house</span></h1>
-        <h2 class="hero__title">Event локация под корпоратив, день рождения и отдых на природе </h2>
-        <p class="hero_subtitle">20 мин от центра Киева</p>
+                <h2 class="hero__title">Літо завжди поруч з нами!
+        </h2>
+        <p class="hero_subtitle"> Event локація на природі.  20 хвилин від центра.</p>
         <ul class="hero__list">
             <li class="hero__item"><img src="./img/hero/cafe.svg" alt="">
                 <p class="hero__text">кафе</p></li>
             <li class="hero__item hero__item_lower"><img src="./img/hero/rent.svg" alt="">
-                <p class="hero__text">аренда</p></li>
+                <p class="hero__text">оренда</p></li>
             <li class="hero__item hero__item_lower"><img src="./img/hero/people.svg" alt="">
                 <p class="hero__text">корпоратив</p></li>
             <li class="hero__item"><img src="./img/hero/sport.svg" alt="">
-                <p class="hero__text">спорт</p></li>
+                <p class="hero__text">розваги</p></li>
         </ul>
     </div>
 </section>
             <section class="section benefits">
     <div class="container benefits__container">
-        <h2 class="title benefits__title">«Тут все свои»</h2>
-        <p class="benefits__text">Мы создали домик своей мечты, где каждый сможет почувствовать себя как дома, побыть
-            наедине с природой, заняться
-            спортом, встретиться с друзьями и найти единомышленников. Именно по этому наш девиз «Тут все свои».</p>
+        <h2 class="title benefits__title">«Тут всі свої»</h2>
+        <p class="benefits__text">Ми створили будиночок своєї мрії, де кожен зможе відчути себе як удома, побути
+            наодинці з природою, зайнятися
+            спортом, зустрітися з друзями та знайти однодумців. Саме тому наш девіз «Тут усі свої».</p>
         <p class="benefits__text">
-            На базе стартовой площадки для вейкбординга мы
-            построили кафе с вкуснейшей коктейльной картой,
-            обширной линейкой сидров и кухней с
-            мангал-меню и легкими деликатесными закусками под
-            прохладительные напитки. <br/>
-            Welcome to my home.&#128075;</p>
+            На базі стартового майданчика для вейкбордингу ми
+            побудували кафе з найсмачнішою коктейльною карткою,
+            великою лінійкою сидрів та кухнею з
+            мангал-меню та легкими делікатесними закусками під
+            прохолодні напої. <br/>
+            Welcome to our home.&#128075;</p>
     </div>
 </section>
-            <section class="section gallery">
+            <section class="section gallery" id='gallery'>
     <div class="container">
         <h2 class="title gallery__title">Фотогалерея</h2>
 
@@ -149,12 +162,26 @@
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
                 <!-- Slides -->
-                <div class="swiper-slide gallery-slide"><img src='./img/gallery/img1.jpg'/>
-                </div>
-                <div class="swiper-slide gallery-slide"><img src='./img/gallery/img2.jpg'/></div>
-                <div class="swiper-slide gallery-slide"><img src='./img/gallery/img3.jpg'/></div>
-                <div class="swiper-slide gallery-slide"><img src='./img/gallery/img3.jpg'/></div>
-                <div class="swiper-slide gallery-slide"><img src='./img/gallery/img3.jpg'/></div>
+                <div class="swiper-slide gallery-slide"><img src='./img/gallery/1.webp' alt='NST House' height='300'/></div>
+                <div class="swiper-slide gallery-slide"><img src='./img/gallery/2.webp' alt='NST House' height='300'/></div>
+                <div class="swiper-slide gallery-slide"><img src='./img/gallery/3.webp' alt='NST House' height='300'/></div>
+                <div class="swiper-slide gallery-slide"><img src='./img/gallery/4.webp' alt='NST House' height='300'/></div>
+                <div class="swiper-slide gallery-slide"><img src='./img/gallery/5.webp' alt='NST House' height='300'/></div>
+                <div class="swiper-slide gallery-slide"><img src='./img/gallery/6.webp' alt='NST House' height='300'/></div>
+                <div class="swiper-slide gallery-slide"><img src='./img/gallery/7.webp' alt='NST House' height='300'/></div>
+                <div class="swiper-slide gallery-slide"><img src='./img/gallery/8.webp' alt='NST House' height='300'/></div>
+                <div class="swiper-slide gallery-slide"><img src='./img/gallery/9.webp' alt='NST House' height='300'/></div>
+                <div class="swiper-slide gallery-slide"><img src='./img/gallery/10.webp' alt='NST House' height='300'/></div>
+                <div class="swiper-slide gallery-slide"><img src='./img/gallery/11.webp' alt='NST House' height='300'/></div>
+                <div class="swiper-slide gallery-slide"><img src='./img/gallery/12.webp' alt='NST House' height='300'/></div>
+                <div class="swiper-slide gallery-slide"><img src='./img/gallery/13.webp' alt='NST House' height='300'/></div>
+                <div class="swiper-slide gallery-slide"><img src='./img/gallery/14.webp' alt='NST House' height='300'/></div>
+                <div class="swiper-slide gallery-slide"><img src='./img/gallery/15.webp' alt='NST House' height='300'/></div>
+                <div class="swiper-slide gallery-slide"><img src='./img/gallery/16.webp' alt='NST House' height='300'/></div>
+                <div class="swiper-slide gallery-slide"><img src='./img/gallery/17.webp' alt='NST House' height='300'/></div>
+                <div class="swiper-slide gallery-slide"><img src='./img/gallery/18.webp' alt='NST House' height='300'/></div>
+                <div class="swiper-slide gallery-slide"><img src='./img/gallery/19.webp' alt='NST House' height='300'/></div>
+                <div class="swiper-slide gallery-slide"><img src='./img/gallery/20.webp' alt='NST House' height='300'/></div>
             </div>
 
             <!-- If we need navigation buttons -->
@@ -167,138 +194,146 @@
 </section>
             <section class="section">
   <div class="container">
-    <h2 class="title">Корпоратив</h2>
+    <h2 class="title">Що ми пропонуємо?</h2>
     <ul class="corporation__list">
       <li class="corporation__item">
         <svg class="corporation__img">
           <use href="./img/sprites/sprite.svg#icon-rent-2"></use>
         </svg>
-        <h3 class="corporation__subtitle">аренда</h3>
-        <p class="corporation__text">Шатер, мангал, сцена</p>
+        <h3 class="corporation__subtitle">оренда</h3>
+        <p class="corporation__text">Окремі зони: намет, 2 поверх, пірс.</p>
       </li>
       <li class="corporation__item">
         <svg class="corporation__img">
           <use href="./img/sprites/sprite.svg#icon-corp-2"></use>
         </svg>
-        <h3 class="corporation__subtitle">корпоративы</h3>
-        <p class="corporation__text">Организация, проведение</p>
+        <h3 class="corporation__subtitle">Корпоратив</h3>
+        <p class="corporation__text">Організація, проведення заходу до 200 чоловік </p>
       </li>
       <li class="corporation__item">
         <svg class="corporation__img">
           <use href="./img/sprites/sprite.svg#icon-lounge"></use>
         </svg>
-        <h3 class="corporation__subtitle">лаундж зона</h3>
-        <p class="corporation__text">Кальян, крафтовое пиво,
-          мангал меню, уютные пуфики</p>
+        <h3 class="corporation__subtitle">лаунж зона</h3>
+        <p class="corporation__text">Затишні пуфи, димні кальяни, кайфова музика</p>
       </li>
       <li class="corporation__item">
         <svg class="corporation__img">
           <use href="./img/sprites/sprite.svg#icon-family"></use>
         </svg>
-        <h3 class="corporation__subtitle">семейный отдых</h3>
-        <p class="corporation__text">Отличная площадка для тихого
-          и уютного отдыха</p>
+        <h3 class="corporation__subtitle">Дитячий майданчик</h3>
+        <p class="corporation__text">Двоповерховий лабіринт та відокремнела зона з дитячими іграми</p>
       </li>
       <li class="corporation__item">
         <svg class="corporation__img">
           <use href="./img/sprites/sprite.svg#icon-b-day"></use>
         </svg>
-        <h3 class="corporation__subtitle">дни рождения</h3>
-        <p class="corporation__text">Подготовим всё для Вашего
-          лучшего  праздника</p>
+        <h3 class="corporation__subtitle">Дні народження</h3>
+        <p class="corporation__text">Підготуємо все для Вашого
+            кращого свята</p>
       </li>
       <li class="corporation__item">
         <svg class="corporation__img">
           <use href="./img/sprites/sprite.svg#icon-event"></use>
         </svg>
-        <h3 class="corporation__subtitle">event локация</h3>
-        <p class="corporation__text">Собственная сцена, мероприятия
-          до 400 человек</p>
+        <h3 class="corporation__subtitle">event локація</h3>
+        <p class="corporation__text">Маємо власну сцену, події
+          до 400 чоловік</p>
       </li>
       <li class="corporation__item">
         <svg class="corporation__img">
           <use href="./img/sprites/sprite.svg#icon-catering"></use>
         </svg>
         <h3 class="corporation__subtitle">кейтеринг</h3>
-        <p class="corporation__text">Организация под ключ</p>
+        <p class="corporation__text">Организація під ключ (фуршет, банкет)</p>
       </li>
       <li class="corporation__item">
         <svg class="corporation__img">
           <use href="./img/sprites/sprite.svg#icon-sport-2"></use>
         </svg>
-        <h3 class="corporation__subtitle">спортивная зона</h3>
+        <h3 class="corporation__subtitle">Активності</h3>
         <p class="corporation__text">Бампеболл, Вейкборд, Слеклайн,
-          поляна для йоги</p>
+          Корнхол, Настільний теніс</p>
       </li>
     </ul>
-    <button type="button" class="button corporation__btn" data-modal-open>Заказать</button>
+    <button type="button" class="button corporation__btn" data-modal-open>Замовити дзвінок</button>
   </div>
 </section>
-            <section class="section aboutUs">
+            <section class="section aboutUs" id='about'>
   <div class="container">
-    <h2 class="title aboutUs__title">о нас</h2>
+    <h2 class="title aboutUs__title">про нас</h2>
     <div class="aboutUs__container">
       <div class="aboutUs__img-bg"><img src="./img/logo/logo-section1.png" alt="" width="225"></div>
       <div class="aboutUs__text">
-        <p>Дорогие друзья, приглашаем вас посетить нашу локацию #nestoinameste, HOUSE XPark, в
-          центральной части Киева с lounge зоной, event зоной и sport зоной где вы сможете вкусно поесть, провести
-          большое
-          мероприятие и просто замечательно отдохнуть большой компанией от городской суеты, расслабиться и спрятаться от
-          жары на берегу залива реки Десенка, в уютном шатре.
+        <p>Дорогі друзі, запрошуємо вас відвідати нашу локацію #nestoinameste, HOUSE XPark, в
+            центральній частині Києва з lounge зоною, event зоною та sport зоною де ви зможете смачно поїсти, провести
+            велике
+            захід і просто чудово відпочити великою компанією від міської метушні, розслабитися та сховатись від
+            спеки на березі затоки річки Десенка, у затишному наметі.
           ⠀</p>
-        <p> Так же вы сможете принять участие в различных event мероприятиях, поиграть в бампербол,
-          на
-          первом в Украине стационарном поле для бампербола, научится ходить по Слеклайну, сыграть в Петанк, промчаться
-          на
-          Вейкборде, по кольцевой канатной дороге вдоль берега и многое другое.</p>
-        <a href="" class="aboutUs__link">Познакомимся?</a>
+        <p> Також ви зможете взяти участь у різних event заходах, пограти в бампербол,
+            на
+            першому в Україні стаціонарному полі для бамперболу, навчитися ходити Слеклайном, зіграти в Корнхол, промчатись
+            на
+            Вейкборді, кільцевою канатною дорогою вдоль берега і багато іншого.</p>
+<!--        <a href="" class="aboutUs__link">Познакомимся?</a>-->
       </div>
     </div>
   </div>
 </section>
+            <section class="section ourTeam">
+  <div class="container">
+    <h2 class="title ourTeam__title">наша команда</h2>
+    <img  src="./img/ourTeam/team.jpg"/>
+  </div>
+</section>
             <section class="section">
   <div class="container">
-    <h2 class="title">отзывы</h2>
+    <h2 class="title">Відгуки</h2>
     <div class="reviewSwiper swiper">
       <div class="swiper-wrapper">
         <div class="swiper-slide reviews__slide">
-          <img   src="./img/reviews/reviewsImg.png" alt="portrait"/>
+            <a href='https://www.google.com/maps/place/nestoinameste+HOUSE/@50.4964466,30.5515497,14.96z/data=!4m14!1m5!8m4!1e1!2s112499809458833594641!3m1!1e1!3m7!1s0x40d4d11a8a3c94bb:0x2df8b78aec62ed2c!8m2!3d50.498369!4d30.5479719!9m1!1b1!16s%2Fg%2F11hz6tdfdp?hl=ru'>
+                <img   src="./img/reviews/reviewsImg.png" alt="portrait"/>
+            </a>
+
           <div class="reviews__info">
             <h3 class="reviews__subtitle">Ольга Болгарская</h3>
             <p class="reviews__text">Благодаря ребятам из Nestoinameste наш корпоратив прошел на высоте! Нас было 43
               человека и все были при деле. Скучать не приходилось, так как продумано все до мелочей. Командные игры,
               вкусная еда, живая музыка и море позитива. Очень рекомендую!;)</p>
-            <p class="reviews__date">21 августа 2019</p>
+<!--            <p class="reviews__date">21 августа 2019</p>-->
           </div>
         </div>
         <div class="swiper-slide reviews__slide">
-          <img   src="./img/reviews/reviewsImg.png" alt="portrait"/>
+            <a href='https://www.google.com/maps/contrib/116001159863323964167/place/ChIJu5Q8ihrR1EARLO1i7Iq3-C0/@50.4502008,30.3128592,11.21z/data=!4m6!1m5!8m4!1e1!2s116001159863323964167!3m1!1e1?hl=ru'>
+                <img   src="./img/reviews/Larisa.png" alt="portrait"/>
+            </a>
           <div class="reviews__info">
-            <h3 class="reviews__subtitle">Ольга Болгарская</h3>
-            <p class="reviews__text">Благодаря ребятам из Nestoinameste наш корпоратив прошел на высоте! Нас было 43
-              человека и все были при деле. Скучать не приходилось, так как продумано все до мелочей. Командные игры,
-              вкусная еда, живая музыка и море позитива. Очень рекомендую!;)</p>
-            <p class="reviews__date">21 августа 2019</p>
+            <h3 class="reviews__subtitle">Larisa Saienko</h3>
+            <p class="reviews__text">Прекрасное место для компании, семьис детьми и без и просто пары. Развлечения на любой вкус: тут тебе и в волейбол поиграть, и покупаться, и вейкборд, и танцы. Для любителей спокойного отдыха это, мне кажется, идеальное место. Здесь можно покушать, пообщаться, выпить и полюбоваться видами природы. Закат здесь просто волшебный!</p>
+<!--            <p class="reviews__date">21 августа 2019</p>-->
           </div>
         </div>
         <div class="swiper-slide reviews__slide">
-          <img   src="./img/reviews/reviewsImg.png" alt="portrait"/>
+            <a href='https://www.google.com/maps/contrib/112499809458833594641/place/ChIJu5Q8ihrR1EARLO1i7Iq3-C0/@50.3832731,30.3275626,11z/data=!4m4!1m3!8m2!1e1!2s112499809458833594641?hl=ru'>
+                <img   src="./img/reviews/Dima.png" alt="portrait"/>
+            </a>
+
           <div class="reviews__info">
-            <h3 class="reviews__subtitle">Ольга Болгарская</h3>
-            <p class="reviews__text">Благодаря ребятам из Nestoinameste наш корпоратив прошел на высоте! Нас было 43
-              человека и все были при деле. Скучать не приходилось, так как продумано все до мелочей. Командные игры,
-              вкусная еда, живая музыка и море позитива. Очень рекомендую!;)</p>
-            <p class="reviews__date">21 августа 2019</p>
+            <h3 class="reviews__subtitle">Дмитрий Абрамович</h3>
+            <p class="reviews__text">Очень хорошее место для времяпровождения в компании друзей и семьёй. Отличная локация, окружающая природа, классные концерты, приятные люди. Хочется возвращаться туда снова и снова. Рекомендую.</p>
+<!--            <p class="reviews__date">21 августа 2019</p>-->
           </div>
         </div>
         <div class="swiper-slide reviews__slide">
-          <img   src="./img/reviews/reviewsImg.png" alt="portrait"/>
+            <a href='https://www.google.com/maps/contrib/112499809458833594641/reviews/@50.383303,30.4110025,12z/data=!3m1!4b1!4m3!8m2!3m1!1e1?hl=ru'>
+                <img   src="./img/reviews/natali.png" alt="portrait"/>
+            </a>
           <div class="reviews__info">
-            <h3 class="reviews__subtitle">Ольга Болгарская</h3>
-            <p class="reviews__text">Благодаря ребятам из Nestoinameste наш корпоратив прошел на высоте! Нас было 43
-              человека и все были при деле. Скучать не приходилось, так как продумано все до мелочей. Командные игры,
-              вкусная еда, живая музыка и море позитива. Очень рекомендую!;)</p>
-            <p class="reviews__date">21 августа 2019</p>
+            <h3 class="reviews__subtitle">Наталія Косяченко</h3>
+            <p class="reviews__text">Радует сервис на локации nestoinameste. Праздновали там др и очеееень довольны. Коллегам ивенторам советовала бы обратить внимание😉 …</p>
+<!--            <p class="reviews__date">21 августа 2019</p>-->
           </div>
         </div>
 
@@ -310,15 +345,9 @@
     </div>
   </div>
 </section>
-            <section class="section ourTeam">
-  <div class="container">
-    <h2 class="title ourTeam__title">наша команда</h2>
-    <img  src="./img/ourTeam/team.jpg"/>
-  </div>
-</section>
           <section class="section">
   <div class="container">
-    <h2 class="title">наши клиенты</h2>
+    <h2 class="title">наші клиенти</h2>
     <ul class="clients__list">
       <li class="clients__item">
         <picture>
@@ -393,9 +422,9 @@
     </ul>
   </div>
 </section>
-          <section class="section contacts">
+          <section class="section contacts" id='contacts'>
   <div class="container">
-    <h2 class="title contacts__title">контакты</h2>
+    <h2 class="title contacts__title">контакти</h2>
 
     <div class="contacts__flex-container">
       <div>
@@ -410,9 +439,26 @@
           <li class="contacts__item">
             <a target="_blank"
                href="https://www.google.com/maps/place/nestoinameste+HOUSE/@50.498369,30.5479719,15z/data=!4m6!3m5!1s0x40d4d11a8a3c94bb:0x2df8b78aec62ed2c!8m2!3d50.498369!4d30.5479719!16s%2Fg%2F11hz6tdfdp"
-               class="contacts__link">Киев, X-Park, 02139</a>
+               class="contacts__link">Київ, X-Park, 02139</a>
           </li>
         </ul>
+          <ul class="socials__list">
+              <li class="socials__item"><a href="" class="socials__link">
+                  <svg width="30" height="30">
+                      <use href="./img/sprites/sprite.svg#icon-instagram"></use>
+                  </svg>
+              </a></li>
+              <li class="socials__item"><a href="" class="socials__link">
+                  <svg width="30" height="30">
+                      <use href="./img/sprites/sprite.svg#icon-facebook"></use>
+                  </svg>
+              </a></li>
+              <li class="socials__item"><a href="" class="socials__link">
+                  <svg width="30" height="30">
+                      <use href="./img/sprites/sprite.svg#icon-telegram"></use>
+                  </svg>
+              </a></li>
+          </ul>
       </div>
       <a target="_blank"
          href="https://www.google.com/maps/place/nestoinameste+HOUSE/@50.498369,30.5479719,15z/data=!4m6!3m5!1s0x40d4d11a8a3c94bb:0x2df8b78aec62ed2c!8m2!3d50.498369!4d30.5479719!16s%2Fg%2F11hz6tdfdp">
@@ -423,57 +469,16 @@
         </picture>
       </a>
 
-      <button class="button contacts__button" data-modal-open>Задать вопрос</button>
+      <button class="button contacts__button" data-modal-open>Замовити дзвінок</button>
     </div>
   </div>
 </section>
 
         </main>
         <footer class="footer">
-  <div class="container footer__container">
-    <div class="footer__flex-container">
-      <svg class="footer__logo">
-        <use href="./img/sprites/sprite.svg#icon-logo-footer"/>
-      </svg>
-      <div class="footer-info">
-        <div class="footer-contacts">
-          <h3 class="footer__subtitle">Контакты</h3>
-          <ul class="footer-contacts__list">
-            <li class="footer-contacts__item">
-              <a href="" class="footer-contacts__link">Киев, X-Park, 02139</a></li>
-            <li class="footer-contacts__item">
-              <a href="" class="footer-contacts__link">+38 (050) 242-02-11</a>
-            </li>
-            <li class="footer-contacts__item">
-              <a href="" class="footer-contacts__link">ukrainekava@gmail.com</a>
-            </li>
-          </ul>
-        </div>
-        <div class="footer-link">
-          <h3 class="footer__subtitle">Мы в соцсетях</h3>
-          <ul class="footer-link__list">
-            <li class="footer-link__item"><a href="" class="footer-link__link">
-              <svg width="34" height="34">
-                <use href="./img/sprites/sprite.svg#footer-instagram"></use>
-              </svg>
-            </a></li>
-            <li class="footer-link__item"><a href="" class="footer-link__link">
-              <svg width="34" height="34">
-                <use href="./img/sprites/sprite.svg#footer-telegram"></use>
-              </svg>
-            </a></li>
-            <li class="footer-link__item"><a href="" class="footer-link__link">
-              <svg width="34" height="34">
-                <use href="./img/sprites/sprite.svg#footer-facebook"></use>
-              </svg>
-            </a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <p class="copyright">©NESTOINAMESTE 2014-2020
-      все права защищены</p>
-  </div>
+    <p class="copyright">©NESTOINAMESTE 2019-2023
+      всі права захищені
+    </p>
 </footer>
         <!-- !-----------Modal -->
 <div class="backdrop is-hidden" data-modal>
@@ -485,12 +490,12 @@
           X
         </button>
 
-        <p class="modal__caption">Оставьте свои данные, мы вам перезвоним</p>
+        <p class="modal__caption">Залишіть свої дані, ми вам передзвонимо</p>
         <form   action="https://formspree.io/f/xzbqjknl"
                 method="POST" class="form">
             <div class="register">
                 <label class="form__label"
-                >Имя
+                >Ім'я
                     <span class="input-container">
                 <input class="form__input" type="text" name="name" id="name" required/><svg
                             class="form__icon"
@@ -508,7 +513,7 @@
               </span>
                 </label>
                 <label class="form__label"
-                >Почта
+                >Пошта
                     <span class="input-container">
                 <input class="form__input" type="email" name="email" id="email" required/><svg
                             class="form__icon"
@@ -516,19 +521,19 @@
                   <use href="./img/sprites/sprite.svg#icon-email"></use></svg></span
                     ></label>
                 <label class="form__label"
-                >Комментарий<textarea
+                >Коментарій<textarea
                         class="form__comment"
                         name="comment"
                         id="comment"
-                        placeholder="Введите текст"
+                        placeholder="Введіть текст"
                 ></textarea>
                 </label>
             </div>
-            <button class="button form__button" type="submit">Отправить</button>
+            <button class="button form__button" type="submit">Відправити</button>
         </form>
     </div>
 </div>
-        <script type="module" src="https://kit.fontawesome.com/0377b0c2de.min.js" crossorigin="anonymous"></script>
+        <script type="module" src="https://kit.fontawesome.com/0377b0c2de.js" crossorigin="anonymous"></script>
 
         <script src="js/vendor.min.js"></script>
         <script src="js/main.min.js"></script>
