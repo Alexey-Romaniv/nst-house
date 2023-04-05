@@ -32,6 +32,21 @@
     color: $accent-color;
   }
 }
+.socials__list {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+}
+
+.socials__link svg {
+    fill: $white-color;
+    transform: scale(1);
+    transition: transform $time-animation $cubic-bezier;
+
+    &:hover, &:focus {
+        transform: scale(1.1);
+    }
+}
 
 .contacts__button{
   margin: 20px auto 0;
@@ -43,10 +58,10 @@
 
 @include mq(desktop){
   .contacts{
-    background: url("../img/contacts/contactsBg-gradient-des.png"), url("../img/contacts/contactsBg-des.png");
-    background-position: center;
+    background: url("../img/contacts/bg-cont2.png");
+    background-position: top;
     background-repeat: no-repeat;
-    background-size: 1280px;
+    background-size: 100vw;
 
     padding-top: 188px;
   }
