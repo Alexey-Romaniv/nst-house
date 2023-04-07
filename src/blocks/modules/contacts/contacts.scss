@@ -1,41 +1,43 @@
-.contacts{
-  background: linear-gradient(0deg, rgba(123, 184, 62, 0.67), rgba(123, 184, 62, 0.67)), url('../img/contacts/contactsBg.png');
-  background-size: cover;
+.contacts {
+    background: linear-gradient(0deg, rgba(123, 184, 62, 0.67), rgba(123, 184, 62, 0.67)), url('../img/contacts/contactsBg.png');
+    background-size: cover;
 
 
-  text-align: center;
+    text-align: center;
 
-  & img{
-    margin-inline: auto;
-  }
+    & img {
+        margin-inline: auto;
+    }
 }
 
-.contacts__title{
-  color: $white-color;
+.contacts__title {
+    color: $white-color;
 }
 
-.contacts__list{
-  display: flex;
+.contacts__list {
+    display: flex;
 
-  flex-direction: column;
-  gap: 5px;
+    flex-direction: column;
+    gap: 5px;
 
-  margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 
-.contacts__link{
-  color: $white-color;
+.contacts__link {
+    color: $white-color;
 
-  transition: color $time-animation $cubic-bezier;
+    transition: color $time-animation $cubic-bezier;
 
-  &:hover, &:focus{
-    color: $accent-color;
-  }
+    &:hover, &:focus {
+        color: $accent-color;
+    }
 }
+
 .socials__list {
     display: flex;
     justify-content: center;
     gap: 18px;
+    margin-bottom: 20px;
 }
 
 .socials__link svg {
@@ -48,46 +50,49 @@
     }
 }
 
-.contacts__button{
-  margin: 20px auto 0;
+.contacts__button {
+    margin: 20px auto 0;
 
-  &:before{
-    right: 5px;
-  }
+    &:before {
+        right: 5px;
+    }
+}
+.contacts__logo{
+    margin-bottom: 20px;
 }
 
-@include mq(desktop){
-  .contacts{
-    background: url("../img/contacts/bg-cont2.png");
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: 100vw;
+@include mq(desktop) {
+    .contacts {
+        background: url("../img/contacts/bg-cont2.png");
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: 100vw;
 
-    padding-top: 188px;
-  }
-  .contacts__flex-container{
-    display: flex;
-    flex-direction: row;
-    gap: 100px;
-
-    position: relative;
-
-    & div{
-      margin-left: 25px;
+        padding-top: 188px;
     }
-  }
+    .contacts__flex-container {
+        display: flex;
+        flex-direction: row;
+        gap: 100px;
 
-  .contacts__button{
-    position: absolute;
-    bottom: 10px;
-    left: 25px;
-  }
-  .contacts__map img{
-    width: 700px;
-  }
+        position: relative;
 
-  .contacts__logo{
-    width: 175px;
-    margin-bottom: 40px;
-  }
+        & div {
+            margin-left: 25px;
+        }
+    }
+
+    .contacts__button {
+        position: absolute;
+        bottom: 10px;
+        left: 25px;
+    }
+    .contacts__map img {
+        width: 700px;
+    }
+
+    .contacts__logo {
+        width: 175px;
+        margin-bottom: 40px;
+    }
 }

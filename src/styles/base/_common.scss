@@ -1,3 +1,6 @@
+body{
+    position: relative;
+}
 
 .container {
   margin-inline: auto;
@@ -141,4 +144,25 @@
   &__fourth{
     color: #565F64;
   }
+}
+
+.icon-form{
+    position: fixed;
+    z-index: 10;
+    bottom: 15px;
+    right: 10px;
+    width: 54px;
+    height: 54px;
+
+    transition: transform $time-animation $cubic-bezier;
+
+    &:hover, &:focus{
+        transform: scale(1.1);
+    }
+
+    @include mq(desktop){
+        width: 113px;
+        height: 113px;
+
+    }
 }

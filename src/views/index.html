@@ -27,6 +27,8 @@
                 rel="stylesheet"
                 href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
         />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Condensed:wght@300;400&display=swap"
@@ -37,6 +39,7 @@
     <body>
         @@include("../blocks/modules/header/header.html")
         <main>
+            <img class="icon-form" src="../img/sprites/form.svg" alt="" data-modal-open>
             @@include("../blocks/modules/hero/hero.html")
             @@include("../blocks/modules/benefits/benefits.html")
             @@include("../blocks/modules/gallery/gallery.html")

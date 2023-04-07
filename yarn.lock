@@ -9626,6 +9626,13 @@ bem-tools-create@bem-tools/bem-tools-create:
   languageName: node
   linkType: hard
 
+"jquery@npm:>=1.12.0":
+  version: 3.6.4
+  resolution: "jquery@npm:3.6.4"
+  checksum: 8354f7bd0a0424aa714ee1b6b1ef74b410f834eb5c8501682289b358bc151f11677f11188b544f3bb49309d6ec4d15d1a5de175661250c206b06185a252f706f
+  languageName: node
+  linkType: hard
+
 "js-sdsl@npm:^4.1.4":
   version: 4.4.0
   resolution: "js-sdsl@npm:4.4.0"
@@ -11388,6 +11395,7 @@ bem-tools-create@bem-tools/bem-tools-create:
     stylelint-order: ^5.0.0
     stylelint-selector-bem-pattern: ^2.1.1
     swiper: ^9.1.1
+    toastr: ^2.1.4
     webpack: ^5.70.0
     webpack-stream: ^7.0.0
     yargs: ^17.3.1
@@ -15151,6 +15159,15 @@ bem-tools-create@bem-tools/bem-tools-create:
   dependencies:
     through2: ^2.0.3
   checksum: 5834a69d68cbe0d74115373bbe219dbe60c1950021f5ec9dd4af179ffbb307bce3d45fde9dacec05a8f4f79b86734433eb9b42946ccb81d2d4d4f8828628b7e6
+  languageName: node
+  linkType: hard
+
+"toastr@npm:^2.1.4":
+  version: 2.1.4
+  resolution: "toastr@npm:2.1.4"
+  dependencies:
+    jquery: ">=1.12.0"
+  checksum: 54e67385cfcdd88cce656c986a4894fd9484824d42549b646ce82b8780621ee1eccc0fb2ec89668dc67de4ae54de8f34a1c8b6f0f217940060d040d3fdb4491f
   languageName: node
   linkType: hard
 
