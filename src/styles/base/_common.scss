@@ -166,3 +166,40 @@ body{
 
     }
 }
+
+// PAGES
+
+.page__link{
+    font-family: $title-font;
+    display: none;
+
+    color: #C4C4C4;
+    font-size: 14px;
+    line-height: calc(16/14);
+    font-weight: 700;
+
+    transition: color $time-animation $cubic-bezier;
+
+    &:hover, &:focus{
+        color: rgba(239, 127, 26, 0.23);
+    };
+
+    @media screen  and (min-width: 1280px){
+        display: block;
+        position: fixed;
+        background-color: rgba(256, 256, 256, 0.8);
+        padding: 10px 15px;
+        border-radius: 25px;
+
+        top: 90px;
+        left: 5%;
+    }
+
+    &-first{
+        color: #979797;
+    }
+
+    &-last{
+        color: $accent-color;
+    }
+}
