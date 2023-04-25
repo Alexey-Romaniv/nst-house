@@ -1,7 +1,9 @@
 *, *:before, *:after{
     box-sizing: border-box;
 }
-
+html{
+    scroll-behavior: smooth;
+}
 main {
     overflow: hidden;
     position: relative;
