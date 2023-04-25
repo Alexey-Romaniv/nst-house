@@ -384,6 +384,10 @@ template {
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 main {
   overflow: hidden;
   position: relative;
@@ -675,6 +679,7 @@ body {
 }
 
 .mobile-menu__cross {
+  padding: 15px;
   position: absolute;
   top: 16px;
   left: 16px;

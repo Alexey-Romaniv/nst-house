@@ -278,6 +278,23 @@ if (list) {
 
 /***/ }),
 
+/***/ "./src/js/import/scroll.js":
+/*!*********************************!*\
+  !*** ./src/js/import/scroll.js ***!
+  \*********************************/
+/***/ (() => {
+
+document.querySelectorAll("a[href^=\"#\"]").forEach(function (anchor) {
+  anchor.addEventListener("click", function (e) {
+    e.preventDefault();
+    document.querySelector(this.getAttribute("href")).scrollIntoView({
+      behavior: "smooth"
+    });
+  });
+});
+
+/***/ }),
+
 /***/ "./src/js/index.js":
 /*!*************************!*\
   !*** ./src/js/index.js ***!
@@ -294,6 +311,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _import_form__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./import/form */ "./src/js/import/form.js");
 /* harmony import */ var _import_rent__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./import/rent */ "./src/js/import/rent.js");
 /* harmony import */ var _import_rent__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_import_rent__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _import_scroll__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./import/scroll */ "./src/js/import/scroll.js");
+/* harmony import */ var _import_scroll__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_import_scroll__WEBPACK_IMPORTED_MODULE_5__);
+
 
 
 
