@@ -116,18 +116,27 @@
     color: $white-color;
 }
 .rent__subtitle {
+
+    font-size: 14px;
     font-weight: 700;
-    font-size: 18px;
-    line-height: 2;
+    line-height: 1.5;
+    @media screen and (min-width:  1280px){
+
+        font-size: 18px;
+    }
 
     letter-spacing: 0.06em;
 }
 .rent__descr {
+    font-size: 12px;
     text-align: right;
-    font-size: 16px;
     line-height: 1.88;
 
     letter-spacing: 0.03em;
+
+    @media screen and (min-width: 1280px) {
+        font-size: 16px;
+    }
 }
 
 .image-thumb {
@@ -167,10 +176,14 @@
 }
 
 .overlay__text {
-    font-size: 18px;
+    font-size: 14px;
     line-height: 1.56;
 
     color: $white-color;
+
+    @media screen and (min-width: 1280px){
+        font-size: 18px;
+    }
 }
 
 .rent__link {
