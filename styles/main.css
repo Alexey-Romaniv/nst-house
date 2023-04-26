@@ -1320,15 +1320,15 @@ body {
 }
 
 .rent__subtitle {
+  font-size: 14px;
   font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
+  line-height: 1.5;
   letter-spacing: 0.06em;
 }
 
 .rent__descr {
+  font-size: 12px;
   text-align: right;
-  font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
 }
@@ -1364,7 +1364,7 @@ body {
 }
 
 .overlay__text {
-  font-size: 18px;
+  font-size: 14px;
   line-height: 1.56;
   color: #ffffff;
 }
@@ -1833,6 +1833,18 @@ body {
 
   .rent__item {
     width: calc((100% - 60px) / 3);
+  }
+
+  .rent__subtitle {
+    font-size: 18px;
+  }
+
+  .rent__descr {
+    font-size: 16px;
+  }
+
+  .overlay__text {
+    font-size: 18px;
   }
 }
 
